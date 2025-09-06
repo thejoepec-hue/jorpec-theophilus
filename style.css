@@ -1,0 +1,44 @@
+/* Base Reset & Design */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; line-height: 1.6; }
+.container { max-width: 900px; margin: 0 auto; padding: 1rem; }
+.btn, .btn-primary { padding: 0.6rem 1rem; text-decoration: none; border-radius: 5px; font-weight: bold; }
+.btn-primary { background: #007BFF; color: #fff; }
+.btn { background: #f0f0f0; color: #333; }
+
+/* Header & Navigation */
+.header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+.nav { display: none; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; }
+.nav a { display: block; text-decoration: none; color: #007BFF; }
+.nav-toggle { background: none; border: none; font-size: 1rem; cursor: pointer; }
+
+@media (min-width: 600px) {
+  .nav { display: flex; flex-direction: row; margin-top: 0; }
+  .nav a { margin-left: 1rem; }
+  .nav-toggle { display: none; }
+}
+
+/* Hero Section */
+.hero { text-align: center; margin: 2rem 0; }
+
+/* Programs */
+.programs .card-list { display: grid; gap: 1rem; }
+@media (min-width: 700px) {
+  .programs .card-list { grid-template-columns: repeat(3, 1fr); }
+}
+.card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; }
+
+/* Impact Stats */
+.stats .stat-grid { display: grid; gap: 1rem; text-align: center; }
+@media (min-width: 600px) {
+  .stats .stat-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Contact Section */
+.contact { text-align: center; margin: 2rem 0; }
+.social-links a { margin: 0 0.5rem; color: #007BFF; text-decoration: none; }
+
+/* Footer */
+.footer { text-align: center; padding: 1.5rem 0; color: #555; }
+
+/* Year Auto-update */
